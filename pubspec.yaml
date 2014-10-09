@@ -1,0 +1,8 @@
+name: Polymer_Template_Simple
+description: A simple Polymer Dart starter application.
+dependencies:
+  core_elements: any
+  polymer: any
+transformers:
+- polymer:
+    entry_points: web/index.html

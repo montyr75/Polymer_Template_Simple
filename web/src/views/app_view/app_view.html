@@ -1,0 +1,59 @@
+<!-- Polymer Element HTML import links go here (above <polymer-element> tag) -->
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/core_elements/core_header_panel.html">
+<link rel="import" href="packages/core_elements/core_toolbar.html">
+
+<polymer-element name="app-view">
+  <template>
+    <style>
+      :host {
+        height: 100%;
+      }
+
+      #wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+      }
+
+      .app-title {
+        text-align: center;
+      }
+
+      .box-container {
+        width: 475px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .user-select-none {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      img {
+        -moz-user-drag: -moz-none;
+        -webkit-user-drag: none;
+        user-drag: none;
+      }
+    </style>
+
+    <core-header-panel flex>
+      <core-toolbar id="drawer-header">
+        <h2 flex class="app-title">Polymer_Template_Simple</h2>
+      </core-toolbar>
+
+      <div id="wrapper">
+        <div class="box-container">
+          {{bindingTest}}
+        </div>
+      </div>
+    </core-header-panel>
+  </template>
+
+  <script type="application/dart" src="app_view.dart"></script>
+</polymer-element>

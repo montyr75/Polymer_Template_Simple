@@ -6,7 +6,7 @@ import 'package:polymer/polymer.dart';
 @CustomTag('app-view')
 class AppView extends PolymerElement {
 
-  static const CLASS_NAME = "AppView";
+  static const String CLASS_NAME = "AppView";
 
   // constants
   static const String SAMPLE_CONSTANT = "SAMPLE_CONSTANT";

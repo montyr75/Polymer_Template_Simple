@@ -9,8 +9,6 @@ import '../../model/global.dart';
 @CustomTag('app-view')
 class AppView extends PolymerElement {
 
-  @observable String bindingTest = "Binding is working...";
-
   // non-visual initialization can be done here
   AppView.created() : super.created() {
     _initLog();
@@ -28,7 +26,6 @@ class AppView extends PolymerElement {
   // life-cycle method called by the Polymer framework when the element is attached to the DOM
   @override void attached() {
     super.attached();
-
     log.info("$runtimeType::attached()");
   }
 

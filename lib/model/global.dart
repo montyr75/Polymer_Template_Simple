@@ -6,7 +6,6 @@ import 'package:intl/intl.dart' show DateFormat;
 // define logger
 final Logger log = new Logger("Polymer_Template_Simple");
 
-
 void initLog() {
   DateFormat dateFormatter = new DateFormat("H:m:s.S");
 
